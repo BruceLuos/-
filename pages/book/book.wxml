@@ -1,4 +1,4 @@
-<!-- for 循环 wx:for -->
+<!-- 书籍页面 -->
 <view wx:if="{{!searching}}" class="container">
     <view class="header">
         <view class='box' bind:tap="onSearching">

@@ -43,6 +43,7 @@ class HTTP {
         Authorization: this._encode()
       },
       success: (res) => {
+        // console.log('token success')
         const code = res.statusCode.toString()
         if (code.startsWith('2')) {
           resolve(res.data)

@@ -98,6 +98,7 @@ Component({
                         likeCount: res.fav_nums,
                         likeStatus: res.like_status
                     })
+                  console.log(this.data.likeCount)
                 })
         },
     }

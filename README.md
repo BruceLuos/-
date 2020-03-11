@@ -2,6 +2,8 @@
 
 #### 介绍
 根据旧岛小程序的设计和使用koa做后端修改后的小程序项目
+![Image text](https://gitee.com/BruceLluo/img-folder/blob/master/%E7%AE%80%E5%88%8A%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E9%A6%96%E9%A1%B5.png)
+![Image text](https://gitee.com/BruceLluo/img-folder/blob/master/%E7%AE%80%E5%88%8A%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%88%91%E7%9A%84%E5%96%9C%E6%AC%A2%E9%A1%B5%E9%9D%A2.png)
 
 #### 软件架构
 软件架构说明

@@ -21,10 +21,14 @@ Page({
     authorized: false,
     userInfo: null,
     bookCount: 0,
-    classics: null
+    classics: null,
+    bgimg: ['/images/my/my@bg.png', '/images/my/my@bg2.png','/images/my/my@bg4.png'],
+    bgImg:'/images/my/my@bg.png',
+    i: 1
   },
 
   onShow(options) {
+    // 在页面展示时获取是否授权的信息
     this.userAuthorized1()
     this.getMyBookCount()
     this.getMyFavor()
@@ -69,7 +73,7 @@ Page({
       })
   },
 
-
+// 判断用户是否授权
   userAuthorized() {
     wx.getSetting({
       success: data => {
@@ -105,10 +109,19 @@ Page({
     })
   },
 
-  onStudy(event) {
-    wx.navigateTo({
-      url: '/pages/course/course',
+// 切换图片
+  onStudy() {
+    // console.log('ff')
+    let iI = this.data.i == 3 ? 0 : this.data.i
+    // console.log(iI)
+    let bgIMG = this.data.bgimg[iI]
+    iI+=1
+    // console.log(bgIMG)
+    this.setData({
+      bgImg : bgIMG,
+      i:iI
     })
+    
   },
 
   onJumpToDetail(event) {
